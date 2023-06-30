@@ -20,7 +20,7 @@ const transporter = nodemailer.createTransport(
 
 // Middleware для обработки CORS
 app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'http://localhost:3000'); // Укажите URL вашего React приложения
+    res.header('Access-Control-Allow-Origin', 'https://feedback-client-green.vercel.app/'); // Укажите URL вашего React приложения
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     next();
 });
