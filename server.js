@@ -33,7 +33,7 @@ app.post('/send-feedback', (req, res) => {
         from: 'oscarquell@mail.ru',
         to: 'askar.kulenbekov.js@gmail.com',
         subject: 'Ответ на приглашение',
-        text: `Имя: ${formData.name}\nФамилия: ${formData.secondName}\nСообщение: ${formData.message}`
+        text: `Имя: ${formData.name}\nФамилия: ${formData.secondName}\nСообщение: ${formData.message}\nBoolean: ${formData.radio}`
     };
 
     // Отправляем письмо
