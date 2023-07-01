@@ -32,8 +32,8 @@ app.post('/send-feedback', (req, res) => {
     const mailOptions = {
         from: 'oscarquell@mail.ru',
         to: 'askar.kulenbekov.js@gmail.com',
-        subject: 'Feedback',
-        text: `Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`
+        subject: 'Ответ на приглашение',
+        text: `Имя: ${formData.name}\nФамилия: ${formData.secondName}\nСообщение: ${formData.message}`
     };
 
     // Отправляем письмо
