@@ -34,6 +34,7 @@ app.post('/send-feedback', (req, res) => {
         to: 'argen1504@mail.ru',
         subject: 'Ответ на приглашение',
         text: `Имя: ${formData.name}\nФамилия: ${formData.secondName}\nПрисутствие: ${formData.presence}\nПожелание: ${formData.message}`
+
     };
 
     // Отправляем письмо
